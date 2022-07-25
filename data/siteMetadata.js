@@ -4,7 +4,7 @@ const siteMetadata = {
   headerTitle: 'Pinardy Yang',
   description: 'A blog created with Next.js and Tailwind.css',
   language: 'en-us',
-  theme: 'system', // system, dark or light
+  theme: 'dark', // system, dark or light
   siteUrl: 'https://pinardy.me',
   siteRepo: 'https://github.com/pinardy/pinardy.github.io',
   siteLogo: '/static/images/logo.png',
