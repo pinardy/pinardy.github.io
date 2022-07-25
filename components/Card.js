@@ -1,3 +1,4 @@
+import ProgressiveImage from 'react-progressive-graceful-image'
 import Image from './Image'
 import Link from './Link'
 
@@ -11,13 +12,19 @@ const Card = ({ title, description, imgSrc, href }) => (
       {imgSrc &&
         (href ? (
           <Link href={href} aria-label={`Link to ${title}`}>
-            <Image
-              alt={title}
-              src={imgSrc}
-              className="object-cover object-center md:h-36 lg:h-48"
-              width={544}
-              height={306}
-            />
+            <ProgressiveImage src={imgSrc}>
+              {(imgSrc, loading) => (
+                <img
+                  className={`image${
+                    loading ? ' loading' : ' loaded'
+                  } object-cover object-center md:h-36 lg:h-48`}
+                  src={imgSrc}
+                  alt={title}
+                  width="700"
+                  height="465"
+                />
+              )}
+            </ProgressiveImage>
           </Link>
         ) : (
           <Image

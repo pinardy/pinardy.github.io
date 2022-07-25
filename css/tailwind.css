@@ -18,6 +18,16 @@
   @apply my-5;
 }
 
+.loading {
+  filter: blur(10px);
+  clip-path: inset(0);
+}
+
+.loaded {
+  filter: blur(0px);
+  transition: filter 0.5s linear;
+}
+
 /* https://stackoverflow.com/questions/61083813/how-to-avoid-internal-autofill-selected-style-to-be-applied */
 input:-webkit-autofill,
 input:-webkit-autofill:focus {
