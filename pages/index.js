@@ -15,11 +15,11 @@ export default function Home() {
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
         <div className="space-y-2 pt-6 pb-8 md:space-y-5">
           <div style={{ textAlign: 'center', alignContent: 'center' }}>
-            <ProgressiveImage src="/static/images/dog-profile-pic.jpg">
+            <ProgressiveImage src="/static/images/profile-pic.jpg">
               {(src, loading) => (
                 <div style={{ display: 'flex', justifyContent: 'center' }}>
                   <img
-                    className={`image${loading ? ' loading' : ' loaded'} h-48 w-48 rounded-full`}
+                    className={`image${loading ? ' loading' : ' loaded'} h-55 w-48 rounded-full`}
                     src={src}
                     alt="avatar"
                     width="192px"
