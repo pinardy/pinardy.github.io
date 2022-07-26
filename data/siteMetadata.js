@@ -1,7 +1,7 @@
 const siteMetadata = {
-  title: 'Pinardy Yang',
-  author: 'Pinardy Yang',
-  headerTitle: 'Pinardy Yang',
+  title: 'Pinardy',
+  author: 'Pinardy',
+  headerTitle: 'Pinardy',
   description: 'A blog created with Next.js and Tailwind.css',
   language: 'en-us',
   theme: 'dark', // system, dark or light

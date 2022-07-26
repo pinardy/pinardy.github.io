@@ -1,5 +1,5 @@
 ---
-name: Pinardy Yang
+name: Pinardy
 avatar: /static/images/profile-pic.jpg
 occupation: Software Engineer
 linkedin: https://www.linkedin.com/in/pinardy
