@@ -28,6 +28,16 @@
   transition: filter 0.5s linear;
 }
 
+.home-title {
+  font-family: 'Segoe Script';
+  font-size: 50px;
+}
+
+.header-title {
+  font-family: 'Segoe Script';
+  font-size: 25px;
+}
+
 /* https://stackoverflow.com/questions/61083813/how-to-avoid-internal-autofill-selected-style-to-be-applied */
 input:-webkit-autofill,
 input:-webkit-autofill:focus {

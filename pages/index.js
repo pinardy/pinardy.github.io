@@ -30,7 +30,7 @@ export default function Home() {
             </ProgressiveImage>
             <br />
             <br />
-            <div style={{ fontFamily: 'Segoe Script', fontSize: 50 }}>Pinardy Yang</div>
+            <div className={`home-title font-size 50`}>Pinardy Yang</div>
             <br />
             <br />
             <p className="text-lg leading-7 text-gray-300 dark:text-gray-100">Software Engineer</p>
