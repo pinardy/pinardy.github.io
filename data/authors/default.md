@@ -1,6 +1,6 @@
 ---
 name: Pinardy Yang
-avatar: /static/images/dog-profile-pic.jpg
+avatar: /static/images/profile-pic.jpg
 occupation: Software Engineer
 linkedin: https://www.linkedin.com/in/pinardy
 github: https://github.com/pinardy

@@ -8,7 +8,7 @@ const siteMetadata = {
   siteUrl: 'https://pinardy.me',
   siteRepo: 'https://github.com/pinardy/pinardy.github.io',
   siteLogo: '/static/images/logo.png',
-  image: '/static/images/dog-profile-pic.jpg',
+  image: '/static/images/profile-pic.jpg',
   socialBanner: '/static/images/twitter-card.png',
   email: 'address@yoursite.com',
   github: 'https://github.com/pinardy',

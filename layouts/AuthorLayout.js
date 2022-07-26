@@ -20,7 +20,7 @@ export default function AuthorLayout({ children, frontMatter }) {
               {(src, loading) => (
                 <div style={{ display: 'flex', justifyContent: 'center' }}>
                   <img
-                    className={`image${loading ? ' loading' : ' loaded'} h-48 w-48 rounded-full`}
+                    className={`image${loading ? ' loading' : ' loaded'} h-55 w-48 rounded-full`}
                     src={src}
                     alt="avatar"
                     width="192px"
