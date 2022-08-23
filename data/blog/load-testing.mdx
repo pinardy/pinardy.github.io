@@ -1,0 +1,59 @@
+---
+title: Load Testing
+date: '2022-08-23'
+tags: []
+draft: false
+summary: Learnings from load testing a web application
+---
+
+I conducted a tech sharing across several teams about what I have learnt during my work on load testing my team's web application.
+
+The slides for the tech sharing can be found [here](https://docs.google.com/presentation/d/1iW4ldHB9jixET-9N_1HdAJhRAEb-Xr8aWY0NIadMe3A/edit?usp=sharing).
+
+I used an open-source testing tool called [k6](https://k6.io) to help me with my load tests.
+K6 is created using golang and allows the test creators to write tests in Javascript/Typescript.
+
+<img src="/static/images/blog/K6-logo.png" alt="k6-logo" width="250" height="250" />
+
+I also used [Faker.js](https://fakerjs.dev/) to help generate mock data for my test database running on MongoDB.
+Having the load test executed on a pre-seeded database helps to simulate actual use during production.
+
+```js
+// Sample code for mocking data
+const user = {
+  _id: faker.datatype.uuid(),
+  name: faker.datatype.string(20),
+}
+```
+
+This helps us identify potential performance pitfalls, since incorrectly created indexes will result in inefficient querying,
+resulting in a longer query time.
+
+I shared on how to create indexes correctly with the use of the [ESR rule](https://www.mongodb.com/docs/manual/tutorial/equality-sort-range-rule/).
+This means that indexes created must follow the order of equality, sort and range to allow them to be executed.
+
+Given an example query below:
+
+```js
+db.getCollection('people')
+  .find({
+    emp_id: { $gt: 20 },
+    company_id: '57d7a121fa937f710a7d486d',
+  })
+  .sort({ last_name: -1 })
+```
+
+The most efficient way to create the index following the ESR rule is:
+
+```js
+{
+  company_id: 1
+  last_name: -1
+  emp_id: 1
+}
+```
+
+### References
+
+- https://pavneetkaur27.medium.com/mongodb-best-practices-for-performing-sorting-e7001f1f503f
+- https://www.mongodb.com/docs/manual/tutorial/equality-sort-range-rule/
