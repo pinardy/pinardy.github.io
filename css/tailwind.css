@@ -28,14 +28,10 @@
   transition: filter 0.5s linear;
 }
 
-.home-title {
-  font-family: 'Segoe Script';
-  font-size: 50px;
-}
-
-.header-title {
-  font-family: 'Segoe Script';
-  font-size: 25px;
+@media (prefers-reduced-motion: no-preference) {
+  body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
 }
 
 /* https://stackoverflow.com/questions/61083813/how-to-avoid-internal-autofill-selected-style-to-be-applied */

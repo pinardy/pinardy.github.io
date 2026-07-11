@@ -4,7 +4,7 @@ import Link from './Link'
 import SectionContainer from './SectionContainer'
 import Footer from './Footer'
 import MobileNav from './MobileNav'
-// import ThemeSwitch from './ThemeSwitch'
+import ThemeSwitch from './ThemeSwitch'
 
 import Image from 'next/image'
 import logo from '../public/static/images/logo.png'
@@ -17,16 +17,12 @@ const LayoutWrapper = ({ children }) => {
           <div>
             <Link href="/" aria-label={siteMetadata.headerTitle}>
               <div className="flex items-center justify-between">
-                <div style={{ paddingRight: 10 }}>
-                  <Image
-                    alt="logo"
-                    src={logo}
-                    className="object-cover object-center md:h-36 lg:h-48"
-                    width={40}
-                    height={40}
-                  />
+                <div className="mr-2.5 flex items-center">
+                  <Image alt="logo" src={logo} width={40} height={40} />
                 </div>
-                <div className="header-title">{siteMetadata.headerTitle}</div>
+                <div className="text-xl font-extrabold tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl">
+                  {siteMetadata.headerTitle}
+                </div>
               </div>
             </Link>
           </div>
@@ -36,13 +32,13 @@ const LayoutWrapper = ({ children }) => {
                 <Link
                   key={link.title}
                   href={link.href}
-                  className="p-1 font-medium text-gray-900 dark:text-gray-100 sm:p-4"
+                  className="p-1 font-medium text-gray-700 transition-colors hover:text-primary-500 dark:text-gray-200 dark:hover:text-primary-400 sm:p-4"
                 >
                   {link.title}
                 </Link>
               ))}
             </div>
-            {/* <ThemeSwitch /> */}
+            <ThemeSwitch />
             <MobileNav />
           </div>
         </header>

@@ -8,7 +8,7 @@ export default function AuthorLayout({ children, frontMatter }) {
   return (
     <>
       <PageSEO title={`About - ${name}`} description={`About me - ${name}`} />
-      <div className="divide-y divide-gray-200 dark:divide-gray-700">
+      <div className="divide-y divide-gray-200 motion-safe:animate-fade-in-up dark:divide-gray-700">
         <div className="space-y-2 pt-6 pb-8 md:space-y-5">
           <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
             About
@@ -18,13 +18,15 @@ export default function AuthorLayout({ children, frontMatter }) {
           <div className="flex flex-col items-center pt-8">
             <ProgressiveImage src={avatar}>
               {(src, loading) => (
-                <div style={{ display: 'flex', justifyContent: 'center' }}>
+                <div className="flex justify-center">
                   <img
-                    className={`image${loading ? ' loading' : ' loaded'} h-55 w-48 rounded-full`}
+                    className={`image${
+                      loading ? ' loading' : ' loaded'
+                    } h-48 w-48 rounded-full object-cover ring-2 ring-gray-200 dark:ring-gray-700`}
                     src={src}
                     alt="avatar"
-                    width="192px"
-                    height="192px"
+                    width="192"
+                    height="192"
                   />
                 </div>
               )}

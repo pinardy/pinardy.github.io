@@ -2,7 +2,8 @@ const siteMetadata = {
   title: 'Pinardy',
   author: 'Pinardy',
   headerTitle: 'Pinardy',
-  description: 'A blog created with Next.js and Tailwind.css',
+  description:
+    'Personal website and blog of Pinardy — a software engineer who enjoys the process of creating new things.',
   language: 'en-us',
   theme: 'dark', // system, dark or light
   siteUrl: 'https://pinardy.me',
@@ -10,11 +11,11 @@ const siteMetadata = {
   siteLogo: '/static/images/logo.png',
   image: '/static/images/profile-pic.jpg',
   socialBanner: '/static/images/twitter-card.png',
-  email: 'address@yoursite.com',
+  email: '',
   github: 'https://github.com/pinardy',
-  twitter: 'https://twitter.com/Twitter',
-  facebook: 'https://facebook.com',
-  youtube: 'https://youtube.com',
+  twitter: '',
+  facebook: '',
+  youtube: '',
   linkedin: 'https://www.linkedin.com/in/pinardy',
   locale: 'en-US',
   analytics: {
