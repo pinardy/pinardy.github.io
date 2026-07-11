@@ -6,7 +6,7 @@ const siteMetadata = {
     'Personal website and blog of Pinardy — a software engineer who enjoys the process of creating new things.',
   language: 'en-us',
   theme: 'dark', // system, dark or light
-  siteUrl: 'https://pinardy.me',
+  siteUrl: 'https://pinardy.github.io',
   siteRepo: 'https://github.com/pinardy/pinardy.github.io',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/profile-pic.jpg',

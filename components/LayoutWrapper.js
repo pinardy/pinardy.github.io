@@ -6,9 +6,6 @@ import Footer from './Footer'
 import MobileNav from './MobileNav'
 import ThemeSwitch from './ThemeSwitch'
 
-import Image from 'next/image'
-import logo from '../public/static/images/logo.png'
-
 const LayoutWrapper = ({ children }) => {
   return (
     <SectionContainer>
@@ -18,7 +15,7 @@ const LayoutWrapper = ({ children }) => {
             <Link href="/" aria-label={siteMetadata.headerTitle}>
               <div className="flex items-center justify-between">
                 <div className="mr-2.5 flex items-center">
-                  <Image alt="logo" src={logo} width={40} height={40} />
+                  <img alt="logo" src="/static/images/logo.png" width={40} height={40} />
                 </div>
                 <div className="text-xl font-extrabold tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl">
                   {siteMetadata.headerTitle}
