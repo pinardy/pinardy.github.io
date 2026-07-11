@@ -82,4 +82,44 @@ const projectsData = [
   },
 ]
 
+export const claudeProjectsData = [
+  {
+    title: 'Learn Bahasa Indonesia',
+    description: `Interactive Bahasa Indonesia learning app — flashcards, quizzes, sentence puzzles,
+    and bilingual news reading. Built with React and TypeScript.`,
+    imgSrc: '/static/images/projects/learn-bahasa-indonesia.png',
+    href: 'https://github.com/pinardy/learn-bahasa-indonesia',
+  },
+  {
+    title: 'Price Tracker for Strings',
+    description: `Price tracker for strings for bowed instruments.`,
+    imgSrc: '/static/images/projects/price-tracker-strings.png',
+    href: 'https://github.com/pinardy/price-tracker-strings',
+  },
+  {
+    title: 'TLDR Summarizer Bot',
+    description: `Summarizes news from TLDR blogs in a HTML file and sends the summary to a Telegram bot.`,
+    imgSrc: '/static/images/projects/tldr-summarizer-bot.png',
+    href: 'https://github.com/pinardy/tldr-summarizer-bot',
+  },
+  {
+    title: 'Music Notation Learner',
+    description: `Learn musical notation through a game.`,
+    imgSrc: '/static/images/projects/music-notation-learner.png',
+    href: 'https://github.com/pinardy/music-notation-learner',
+  },
+  {
+    title: 'Purrfect Pitch',
+    description: `Cute cat chromatic tuner & metronome PWA — smiles when you're in tune.`,
+    imgSrc: '/static/images/projects/purrfect-pitch.png',
+    href: 'https://github.com/pinardy/purrfect-pitch',
+  },
+  {
+    title: 'FRAP Analyzer',
+    description: `Process and quantify data from FRAP microscopy experiments.`,
+    imgSrc: '/static/images/projects/frap-analyzer.png',
+    href: 'https://github.com/pinardy/frap-analyzer',
+  },
+]
+
 export default projectsData
