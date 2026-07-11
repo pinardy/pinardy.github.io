@@ -55,6 +55,11 @@ const securityHeaders = [
 module.exports = withBundleAnalyzer({
   reactStrictMode: true,
   pageExtensions: ['js', 'jsx', 'md', 'mdx'],
+  // GitHub Pages serves plain files, so `next export` needs a non-default
+  // image loader; components/Image.js passes through the original src.
+  images: {
+    loader: 'custom',
+  },
   eslint: {
     dirs: ['pages', 'components', 'lib', 'layouts', 'scripts'],
   },
